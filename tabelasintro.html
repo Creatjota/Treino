@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<!-- <table>
+    
+    
+    Pró
+    -Visualização de dados via linhas e colunas.
+    -Boa acessibilidade para leitura dos dados
+
+
+    Contras
+    -Pouco flexíveis
+    -Precisa de estilização para melhor visualização.
+
+    Não usar
+    -Para criar seu layout -->
+
+<table>
+
+    <caption>Pessoas por idade</caption>
+
+
+    <thead>
+        <tr>
+            <th> Nome </th>
+            <th>Idade</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>João Victor</td>
+            <td>20</td>
+        <tr>
+        <tr>
+            <td>Arnon</td>
+            <td>31</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td>Total</td>
+            <td>2 Pessoas</td>
+        </tr>
+
+    </tfoot>
+</table>
+<hr>
+<hr>
+<!-- TABELA COMPLEXA -->
+<!-- 2 lojas 
+quantos produtos foram produzidos, quantos 
+vendidos e agrupados por nome dos produtor -->
+
+<table>
+    <caption>Produzidos X Vendidos por Loja</caption>
+
+    <colgroup>
+        <col style="background-color: crimson;">
+        <col span="2" style="background-color: darkmagenta;">
+        <col span="2" style="background-color: darkorange;">
+    </colgroup>
+
+    <thead>
+        <tr>
+            <th rowspan="2"></th>
+            <th colspan="2"scope="colgroup" >João Victor</th>
+            <th colspan="2" scope="colgroup">Arnon</th>
+        </tr>
+        <tr>
+            <th scope="col">Produzidos</th>
+            <th scope="col">Vendidos</th>
+            <th scope="col">Produzidos</th>
+            <th scope="col">Vendidos</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">Vassouras</th>
+            <td scope="row">30</td>
+            <td scope="row">25</td>
+            <td scope="row">60</td>
+            <td scope="row">43</td>
+        </tr>
+        <tr>
+            <th>Baldes</th>
+            <td>10</td>
+            <td>6</td>
+            <td>23</td>
+            <td>7</td>
+        </tr>
+    </tbody>
+</table>
